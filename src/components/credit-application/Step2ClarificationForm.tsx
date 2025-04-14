@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { FiUpload, FiCheck, FiX, FiLoader } from 'react-icons/fi';
+import { FiCheck, FiLoader } from 'react-icons/fi';
 import toast from 'react-hot-toast';
 import { FileUpload } from './FileUpload';
 
@@ -103,7 +103,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
       <div className="bg-second-main p-6">
         <h2 className="text-2xl font-bold text-white">Informations Complémentaires</h2>
         <p className="text-white/80 mt-1">
-          Veuillez fournir les informations supplémentaires nécessaires à l'analyse de votre demande
+          Veuillez fournir les informations supplémentaires nécessaires à l&apos;analyse de votre demande
         </p>
       </div>
       
@@ -275,7 +275,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           
           <div className="md:col-span-2">
             <label className="block text-sm font-medium text-gray-700 mb-3">
-              Pièce d'identité <span className="text-red-500">*</span>
+              Pièce d&apos;identité <span className="text-red-500">*</span>
             </label>
             <FileUpload onFileChange={(file) => handleFileChange('identityDoc', file)} />
           </div>

@@ -45,7 +45,7 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
       <div className="bg-main p-6">
         <h2 className="text-2xl font-bold text-white">Dépôt de la Demande de Crédit</h2>
         <p className="text-white/80 mt-1">
-          Veuillez soumettre votre demande de crédit en utilisant l'une des méthodes ci-dessous
+          Veuillez soumettre votre demande de crédit en utilisant l&apos;une des méthodes ci-dessous
         </p>
       </div>
       

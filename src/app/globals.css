@@ -20,6 +20,7 @@
     --foreground: #ededed;
     --main-color: #164B35;
     --second-main-color: #164555;
+    --text-main: #164B35;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -28,6 +29,7 @@
     --foreground: #171717;
     --main-color: #164B35;
     --second-main-color: #164555;
+    --text-main: #164B35;
   }
 }
 

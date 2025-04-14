@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { FiDownload } from "react-icons/fi";
+// import { FiDownload } from "react-icons/fi";
 import { FiUpload } from "react-icons/fi";
 import { FiFile } from "react-icons/fi";
 import { FiX } from "react-icons/fi";

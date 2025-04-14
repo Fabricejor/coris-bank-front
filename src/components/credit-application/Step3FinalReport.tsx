@@ -90,9 +90,9 @@ export function Step3FinalReport({ onReset }: Step3Props) {
       <div className="bg-main p-6">
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
           <div>
-            <h2 className="text-2xl font-bold text-white">Rapport d'Analyse de Crédit</h2>
+            <h2 className="text-2xl font-bold text-white">Rapport d&apos;Analyse de Crédit</h2>
             <p className="text-white/80 mt-1">
-              Résultats de l'analyse automatisée de votre demande
+              Résultats de l&apos;analyse automatisée de votre demande
             </p>
           </div>
           {getStatusBadge()}
@@ -179,11 +179,11 @@ export function Step3FinalReport({ onReset }: Step3Props) {
             </p>
           ) : status === 'rejected' ? (
             <p className="text-gray-700">
-              Nous vous invitons à consulter les raisons du refus dans l'analyse détaillée ci-dessus. Vous pouvez soumettre une nouvelle demande après avoir amélioré ces points.
+              Nous vous invitons à consulter les raisons du refus dans l&apos;analyse détaillée ci-dessus. Vous pouvez soumettre une nouvelle demande après avoir amélioré ces points.
             </p>
           ) : (
             <p className="text-gray-700">
-              Des informations complémentaires sont nécessaires pour finaliser l'étude de votre dossier. Un conseiller vous contactera prochainement.
+              Des informations complémentaires sont nécessaires pour finaliser l&apos;étude de votre dossier. Un conseiller vous contactera prochainement.
             </p>
           )}
         </div>
