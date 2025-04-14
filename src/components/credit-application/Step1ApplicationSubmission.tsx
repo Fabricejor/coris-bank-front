@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { FileUpload } from './FileUpload';
 import { FiFileText, FiArrowRight, FiLoader } from 'react-icons/fi';
-import toast from 'react-hot-toast';
+import toast,{Toaster} from 'react-hot-toast';
 
 interface Step1Props {
   onComplete: () => void;
@@ -14,11 +14,23 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
   const [textInput, setTextInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [submissionMethod, setSubmissionMethod] = useState<'file' | 'text' | null>(null);
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Validate inputs
+    if (!email.trim()) {
+      toast.error('Veuillez saisir votre adresse email');
+      return;
+    }
+    
+    if (!phone.trim()) {
+      toast.error('Veuillez saisir votre numéro de téléphone');
+      return;
+    }
+    
     if (submissionMethod === 'file' && !file) {
       toast.error('Veuillez télécharger un fichier avant de soumettre');
       return;
@@ -41,6 +53,8 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
   };
 
   return (
+    <>
+    {/* <Toaster /> */}
     <div className="max-w-3xl mx-auto bg-[var(--background)] border border-[var(--border-main)] rounded-xl shadow-md overflow-hidden">
       <div className="bg-main p-6">
         <h2 className="text-2xl font-bold text-[var(--text-main)]">Dépôt de la Demande de Crédit</h2>
@@ -51,6 +65,37 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
       
       <form onSubmit={handleSubmit} className="p-6">
         <div className="space-y-6">
+          {/* Contact Information */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-[var(--foreground)] mb-1">
+                Email <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main focus:border-transparent"
+                placeholder="john.doe@example.com"
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-[var(--foreground)] mb-1">
+                Téléphone <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main focus:border-transparent"
+                placeholder="+1 (555) 000-0000"
+              />
+            </div>
+          </div>
+          
           {/* Method Selection */}
           <div className="flex flex-col gap-4 sm:flex-row">
             <button
@@ -126,5 +171,6 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
         </div>
       </form>
     </div>
+    </>
   );
 } 
