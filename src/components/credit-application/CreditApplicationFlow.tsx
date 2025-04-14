@@ -31,7 +31,7 @@ export function CreditApplicationFlow() {
                 }`}>
                 1
               </div>
-              <div className={`h-1 w-16 md:w-32 ${currentStep >= 2 ? 'bg-[var(--bg-main)]' : 'bg-[var(--bg-gray)]'
+              <div className={`h-1 w-16 md:w-full ${currentStep >= 2 ? 'bg-[var(--bg-main)]' : 'bg-[var(--bg-gray)]'
                 }`}>
               </div>
             </div>
@@ -41,7 +41,7 @@ export function CreditApplicationFlow() {
                 }`}>
                 2
               </div>
-              <div className={`h-1 w-16 md:w-32 ${currentStep >= 3 ? 'bg-[var(--bg-second-main)]' : 'bg-[var(--bg-gray)]'
+              <div className={`h-1 w-16 md:w-full ${currentStep >= 3 ? 'bg-[var(--bg-second-main)]' : 'bg-[var(--bg-gray)]'
                 }`}>
               </div>
             </div>
@@ -54,7 +54,7 @@ export function CreditApplicationFlow() {
             </div>
           </div>
 
-          <div className="flex justify-between mt-2">
+          <div className="flex justify-between mt-2 w-full">
             <div className="text-center w-24 md:w-40">
               <p className={`text-sm font-medium ${currentStep === 1 ? 'text-[var(--text-main)]' : ''}`}>Dépôt</p>
             </div>
