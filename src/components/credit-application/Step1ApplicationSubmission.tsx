@@ -76,7 +76,7 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main focus:border-transparent"
-                placeholder="john.doe@example.com"
+                placeholder="Gainede@Talent.com"
               />
             </div>
             
@@ -90,7 +90,7 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main focus:border-transparent"
-                placeholder="+1 (555) 000-0000"
+                placeholder="(+221) 77 777 77 77"
               />
             </div>
           </div>
