@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { FileUpload } from './FileUpload';
 import { FiFileText, FiArrowRight, FiLoader } from 'react-icons/fi';
-import toast,{Toaster} from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 interface Step1Props {
   onComplete: () => void;
@@ -54,7 +54,6 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
 
   return (
     <>
-    {/* <Toaster /> */}
     <div className="max-w-3xl mx-auto bg-[var(--background)] border border-[var(--border-main)] rounded-xl shadow-md overflow-hidden">
       <div className="bg-main p-6">
         <h2 className="text-2xl font-bold text-[var(--text-main)]">Dépôt de la Demande de Crédit</h2>

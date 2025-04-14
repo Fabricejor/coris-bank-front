@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { FiCheck, FiLoader } from 'react-icons/fi';
-import toast , {Toaster} from 'react-hot-toast';
+import toast  from 'react-hot-toast';
 import { FileUpload } from './FileUpload';
 
 interface Step2Props {
@@ -85,7 +85,6 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
 
   return (
     <>
-    {/* <Toaster /> */}
     <div className="max-w-3xl mx-auto bg-[var(--background)] border border-[var(--border-main)] rounded-xl shadow-md overflow-hidden">
       <div className="bg-second-main p-6">
         <h2 className="text-2xl font-bold text-[var(--foreground)]">Clarifications</h2>
@@ -122,7 +121,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
               value={formData.question1}
               onChange={handleInputChange}
               className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-second-main focus:border-transparent"
-              placeholder="Ex: 50 000 €"
+              placeholder="Ex: 50.000.000 FCFA"
             />
           </div>
           
@@ -154,14 +153,14 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
               value={formData.question3}
               onChange={handleInputChange}
               className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-second-main focus:border-transparent"
-              placeholder="Ex: 3 500 €"
+              placeholder="Ex: 3.500.000 FCFA"
             />
           </div>
           
           {/* Question 4 */}
           <div>
             <label htmlFor="question4" className="block text-sm font-medium text-[var(--foreground)] mb-1">
-              Avez-vous d'autres crédits en cours? Si oui, quel est le montant total des mensualités?
+              Avez-vous d&apos;autres crédits en cours? Si oui, quel est le montant total des mensualités?
             </label>
             <input
               type="text"
@@ -170,14 +169,14 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
               value={formData.question4}
               onChange={handleInputChange}
               className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-second-main focus:border-transparent"
-              placeholder="Ex: Oui, 800 € par mois"
+              placeholder="Ex: Oui, 800.000 FCFA par mois"
             />
           </div>
           
           {/* Question 5 */}
           <div>
             <label htmlFor="question5" className="block text-sm font-medium text-[var(--foreground)] mb-1">
-              Quel est l'objectif principal de ce crédit?
+              Quel est l&apos;objectif principal de ce crédit?
             </label>
             <textarea
               id="question5"
@@ -192,9 +191,9 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           
           {/* Identity Document Upload */}
           <div className="mt-6">
-            <h3 className="text-lg font-medium mb-3">Pièce d'identité</h3>
+            <h3 className="text-lg font-medium mb-3">Pièce d&apos;identité</h3>
             <p className="text-sm text-gray-500 mb-3">
-              Veuillez fournir une pièce d'identité valide (carte d'identité, passeport, permis de conduire)
+              Veuillez fournir une pièce d&apos;identité valide (carte d&apos;identité, passeport, permis de conduire)
             </p>
             <FileUpload onFileChange={handleFileChange} />
           </div>
