@@ -7,7 +7,7 @@ export function Toaster() {
     <HotToaster
       position="top-right"
       toastOptions={{
-        className: 'border border-gray-200 bg-white text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50',
+        className: 'border border-[var(--bg-gray)] bg-white text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50',
         duration: 5000,
         style: {
           background: 'var(--background)',

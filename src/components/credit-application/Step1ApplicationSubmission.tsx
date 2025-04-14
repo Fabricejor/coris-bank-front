@@ -41,10 +41,10 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
   };
 
   return (
-    <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="max-w-3xl mx-auto bg-[var(--background)] rounded-xl shadow-md overflow-hidden">
       <div className="bg-main p-6">
-        <h2 className="text-2xl font-bold text-white">Dépôt de la Demande de Crédit</h2>
-        <p className="text-white/80 mt-1">
+        <h2 className="text-2xl font-bold text-[var(--text-main)]">Dépôt de la Demande de Crédit</h2>
+        <p className="text-[var(--foreground)]/80 mt-1">
           Veuillez soumettre votre demande de crédit en utilisant l&apos;une des méthodes ci-dessous
         </p>
       </div>
@@ -56,8 +56,8 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
             <button
               type="button"
               onClick={() => setSubmissionMethod('file')}
-              className={`flex-1 p-4 border rounded-lg flex items-center gap-3 hover:border-main transition-colors
-                ${submissionMethod === 'file' ? 'border-main bg-main/5' : 'border-gray-200'}`}
+              className={`flex-1 p-4 border rounded-lg flex items-center gap-3 hover:border-[var(--border-main)] transition-colors
+                ${submissionMethod === 'file' ? 'border-[var(--border-main)] bg-main/5' : 'border-gray-200'}`}
             >
               <FiFileText className="h-6 w-6 text-main" />
               <div className="text-left">
@@ -69,8 +69,8 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
             <button
               type="button"
               onClick={() => setSubmissionMethod('text')}
-              className={`flex-1 p-4 border rounded-lg flex items-center gap-3 hover:border-main transition-colors
-                ${submissionMethod === 'text' ? 'border-main bg-main/5' : 'border-gray-200'}`}
+              className={`flex-1 p-4 border rounded-lg flex items-center gap-3 hover:border-[var(--border-main)] transition-colors
+                ${submissionMethod === 'text' ? 'border-[var(--border-main)] bg-main/5' : 'border-gray-200'}`}
             >
               <FiFileText className="h-6 w-6 text-main" />
               <div className="text-left">

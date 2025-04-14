@@ -99,10 +99,10 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
   };
 
   return (
-    <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="max-w-3xl mx-auto bg-[var(--background)] border border-[var(--border-main)] rounded-xl shadow-md overflow-hidden">
       <div className="bg-second-main p-6">
-        <h2 className="text-2xl font-bold text-white">Informations Complémentaires</h2>
-        <p className="text-white/80 mt-1">
+        <h2 className="text-2xl font-bold text-[var(--foreground)]">Informations Complémentaires</h2>
+        <p className="text-[var(--foreground)]/80 mt-1">
           Veuillez fournir les informations supplémentaires nécessaires à l&apos;analyse de votre demande
         </p>
       </div>
@@ -113,7 +113,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           <span className="font-medium">Progression</span>
           <span>{progress}%</span>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-2.5">
+        <div className="w-full bg-[var(--main-color)] rounded-full h-2.5">
           <div 
             className="bg-second-main h-2.5 rounded-full"
             style={{ width: `${progress}%` }}
@@ -129,7 +129,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           </div>
           
           <div>
-            <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="fullName" className="block text-sm font-medium text-[var(--foreground)] mb-1">
               Nom complet <span className="text-red-500">*</span>
             </label>
             <input
@@ -144,7 +144,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           </div>
           
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-[var(--foreground)] mb-1">
               Email <span className="text-red-500">*</span>
             </label>
             <input
@@ -154,12 +154,12 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
               value={formData.email}
               onChange={handleInputChange}
               className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-second-main focus:border-transparent"
-              placeholder="john.doe@example.com"
+              placeholder="GAINDE@TALENT.COM"
             />
           </div>
           
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="phone" className="block text-sm font-medium text-[var(--foreground)] mb-1">
               Téléphone <span className="text-red-500">*</span>
             </label>
             <input
@@ -169,7 +169,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
               value={formData.phone}
               onChange={handleInputChange}
               className="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-second-main focus:border-transparent"
-              placeholder="+1 (555) 000-0000"
+              placeholder="+221 77 777 77 77"
             />
           </div>
           
@@ -179,7 +179,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           </div>
           
           <div>
-            <label htmlFor="creditAmount" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="creditAmount" className="block text-sm font-medium text-[var(--foreground)] mb-1">
               Montant du crédit souhaité <span className="text-red-500">*</span>
             </label>
             <input
@@ -194,7 +194,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           </div>
           
           <div>
-            <label htmlFor="duration" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="duration" className="block text-sm font-medium text-[var(--foreground)] mb-1">
               Durée (en mois) <span className="text-red-500">*</span>
             </label>
             <select
@@ -214,7 +214,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           </div>
           
           <div className="md:col-span-2">
-            <label htmlFor="purpose" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="purpose" className="block text-sm font-medium text-[var(--foreground)] mb-1">
               Objet du crédit <span className="text-red-500">*</span>
             </label>
             <textarea
@@ -234,7 +234,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           </div>
           
           <div>
-            <label htmlFor="employmentStatus" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="employmentStatus" className="block text-sm font-medium text-[var(--foreground)] mb-1">
               Statut professionnel <span className="text-red-500">*</span>
             </label>
             <select
@@ -254,7 +254,7 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           </div>
           
           <div>
-            <label htmlFor="monthlyIncome" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="monthlyIncome" className="block text-sm font-medium text-[var(--foreground)] mb-1">
               Revenu mensuel <span className="text-red-500">*</span>
             </label>
             <input
@@ -274,21 +274,21 @@ export function Step2ClarificationForm({ onComplete }: Step2Props) {
           </div>
           
           <div className="md:col-span-2">
-            <label className="block text-sm font-medium text-gray-700 mb-3">
+            <label className="block text-sm font-medium text-[var(--foreground)] mb-3">
               Pièce d&apos;identité <span className="text-red-500">*</span>
             </label>
             <FileUpload onFileChange={(file) => handleFileChange('identityDoc', file)} />
           </div>
           
           <div className="md:col-span-2 mt-4">
-            <label className="block text-sm font-medium text-gray-700 mb-3">
+            <label className="block text-sm font-medium text-[var(--foreground)] mb-3">
               Justificatif de revenus <span className="text-red-500">*</span>
             </label>
             <FileUpload onFileChange={(file) => handleFileChange('proofOfIncome', file)} />
           </div>
           
           <div className="md:col-span-2 mt-4">
-            <label className="block text-sm font-medium text-gray-700 mb-3">
+            <label className="block text-sm font-medium text-[var(--foreground)] mb-3">
               Relevés bancaires (3 derniers mois)
             </label>
             <FileUpload onFileChange={(file) => handleFileChange('bankStatements', file)} />

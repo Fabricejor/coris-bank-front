@@ -43,8 +43,8 @@ export function FileUpload({ onFileChange }: FileUploadProps) {
           {...getRootProps()} 
           className={`border-2 border-dashed p-8 rounded-lg text-center cursor-pointer transition-colors
             ${isDragActive 
-              ? 'border-main bg-main bg-opacity-5' 
-              : 'border-gray-300 hover:border-main'}`
+              ? 'border-[var(--border-main)] bg-main bg-opacity-5' 
+              : 'border-gray-300 hover:border-[var(--border-main)]'}`
           }
         >
           <input {...getInputProps()} />
@@ -59,7 +59,7 @@ export function FileUpload({ onFileChange }: FileUploadProps) {
           </div>
         </div>
       ) : (
-        <div className="border-2 border-main rounded-lg p-4 bg-main bg-opacity-5">
+        <div className="border-2 border-[var(--border-main)] rounded-lg p-4 bg-main bg-opacity-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <FiFile className="h-8 w-8 text-main" />

@@ -86,7 +86,7 @@ export function Step3FinalReport({ onReset }: Step3Props) {
   };
 
   return (
-    <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="max-w-3xl mx-auto bg-[var(--background)] border border-[var(--border-main)] rounded-xl shadow-md overflow-hidden">
       <div className="bg-main p-6">
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
           <div>
@@ -171,18 +171,18 @@ export function Step3FinalReport({ onReset }: Step3Props) {
         </div>
         
         {/* Next Steps */}
-        <div className="mt-10 bg-gray-50 p-6 rounded-lg border border-gray-200">
+        <div className="mt-10 bg-[var(--background)] p-6 rounded-lg border border-[var(--border-main)]">
           <h3 className="text-lg font-medium mb-2">Prochaines étapes</h3>
           {status === 'approved' ? (
-            <p className="text-gray-700">
+            <p className="text-[var(--foreground)]">
               Un conseiller vous contactera sous 48h pour finaliser votre dossier de crédit et vous proposer les meilleures conditions.
             </p>
           ) : status === 'rejected' ? (
-            <p className="text-gray-700">
+            <p className="text-[var(--foreground)]">
               Nous vous invitons à consulter les raisons du refus dans l&apos;analyse détaillée ci-dessus. Vous pouvez soumettre une nouvelle demande après avoir amélioré ces points.
             </p>
           ) : (
-            <p className="text-gray-700">
+            <p className="text-[var(--foreground)]">
               Des informations complémentaires sont nécessaires pour finaliser l&apos;étude de votre dossier. Un conseiller vous contactera prochainement.
             </p>
           )}
@@ -200,7 +200,7 @@ export function Step3FinalReport({ onReset }: Step3Props) {
           
           <button
             onClick={onReset}
-            className="border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 px-4 py-3 rounded-md font-medium flex-1"
+            className="border border-[var(--border-main)] bg-[var(--bg-container)] hover:bg-[var(--main-color)] hover:text-[var(--bg-container)] text-[var(--foreground)] px-4 py-3 rounded-md font-medium flex-1"
           >
             Nouvelle demande
           </button>

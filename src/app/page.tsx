@@ -3,7 +3,7 @@ import { CreditApplicationFlow } from "@/components/credit-application/CreditApp
 export default function Home() {
   return (
     <main>
-      <header className="bg-main text-white py-4">
+      <header className="bg-[var(--bg-main)] text-[var(--foreground)] py-4">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">CorisBank</h1>
@@ -15,7 +15,7 @@ export default function Home() {
                 <a href="#" className="hover:underline">Contact</a>
               </nav>
             </div>
-            <button className="bg-white text-main px-4 py-2 rounded-md font-medium hover:bg-gray-100">
+            <button className="bg-[var(--background)] text-[var(--foreground)] px-4 py-2 rounded-md font-medium hover:bg-[var(--bg-gray)]">
               Espace Client
             </button>
           </div>
@@ -26,7 +26,7 @@ export default function Home() {
         <CreditApplicationFlow />
       </div>
       
-      <footer className="bg-gray-900 text-white py-10 mt-20">
+      <footer className="bg-gray-900 text-[var(--foreground)] py-10 mt-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -38,19 +38,19 @@ export default function Home() {
             <div>
               <h4 className="font-medium mb-4">Liens Rapides</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white">Accueil</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Nos Services</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Demande de Crédit</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Accueil</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Nos Services</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Demande de Crédit</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Contact</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-medium mb-4">Services</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white">Crédit Personnel</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Crédit Immobilier</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Crédit Auto</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Épargne</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Crédit Personnel</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Crédit Immobilier</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Crédit Auto</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Épargne</a></li>
               </ul>
             </div>
             <div>

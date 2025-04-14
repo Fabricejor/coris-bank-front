@@ -20,7 +20,13 @@
     --foreground: #ededed;
     --main-color: #164B35;
     --second-main-color: #164555;
-    --text-main: #164B35;
+    --text-main: #216E4E;
+    --text-second-main: #42B2D7;
+    --border-main:#164555;
+    --bg-main: #216E4E;
+    --bg-second-main: #22A06B;
+    --bg-gray: #38414A;
+    --bg-container:#101214;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -29,7 +35,13 @@
     --foreground: #171717;
     --main-color: #164B35;
     --second-main-color: #164555;
-    --text-main: #164B35;
+    --text-main: #22A06B;
+    --text-second-main: #206A83;
+    --bg-main: #22A06B;
+    --border-main:#227D9B;
+    --bg-second-main: #2ABB7F;
+    --bg-gray: #B6C2CF;
+    --bg-container:#F7F8F9;
   }
 }
 

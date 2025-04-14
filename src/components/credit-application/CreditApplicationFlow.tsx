@@ -21,31 +21,33 @@ export function CreditApplicationFlow() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
+    <div className="min-h-screen bg-[var(--bg-container)] py-12 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Progress Steps */}
         <div className="mb-10">
-          <div className="flex items-center justify-center">
-            <div className="flex items-center">
-              <div className={`flex items-center justify-center w-10 h-10 rounded-full ${currentStep >= 1 ? 'bg-main text-white' : 'bg-gray-200 text-gray-600'
+          <div className="flex items-center justify-center w-full">
+            <div className="flex items-center w-full">
+              <div className={`flex items-center justify-center w-10 h-10 rounded-full ${currentStep >= 1 ? 'bg-[var(--bg-main)] text-[var(--foreground)]' : 'bg-[var(--bg-gray)]  text-[var(--foreground)]'
                 }`}>
                 1
               </div>
-              <div className={`h-1 w-16 md:w-32 ${currentStep >= 2 ? 'bg-main' : 'bg-gray-200'
-                }`}></div>
+              <div className={`h-1 w-16 md:w-32 ${currentStep >= 2 ? 'bg-[var(--bg-main)]' : 'bg-[var(--bg-gray)]'
+                }`}>
+              </div>
             </div>
 
-            <div className="flex items-center">
-              <div className={`flex items-center justify-center w-10 h-10 rounded-full ${currentStep >= 2 ? 'bg-second-main text-white' : 'bg-gray-200 text-gray-600'
+            <div className="flex items-center w-full">
+              <div className={`flex items-center justify-center w-10 h-10 rounded-full ${currentStep >= 2 ? 'bg-[var(--bg-second-main)] text-[var(--foreground)]' : 'bg-[var(--bg-gray)] text-[var(--foreground)]'
                 }`}>
                 2
               </div>
-              <div className={`h-1 w-16 md:w-32 ${currentStep >= 3 ? 'bg-second-main' : 'bg-gray-200'
-                }`}></div>
+              <div className={`h-1 w-16 md:w-32 ${currentStep >= 3 ? 'bg-[var(--bg-second-main)]' : 'bg-[var(--bg-gray)]'
+                }`}>
+              </div>
             </div>
 
             <div className="flex items-center">
-              <div className={`flex items-center justify-center w-10 h-10 rounded-full ${currentStep >= 3 ? 'bg-main text-white' : 'bg-gray-200 text-gray-600'
+              <div className={`flex items-center justify-center w-10 h-10 rounded-full ${currentStep >= 3 ? 'bg-[var(--bg-main)] text-[var(--foreground)]' : 'bg-[var(--bg-gray)] text-[var(--foreground)]'
                 }`}>
                 3
               </div>
@@ -54,13 +56,13 @@ export function CreditApplicationFlow() {
 
           <div className="flex justify-between mt-2">
             <div className="text-center w-24 md:w-40">
-              <p className={`text-sm font-medium ${currentStep === 1 ? 'text-main' : ''}`}>Dépôt</p>
+              <p className={`text-sm font-medium ${currentStep === 1 ? 'text-[var(--text-main)]' : ''}`}>Dépôt</p>
             </div>
             <div className="text-center w-24 md:w-40">
-              <p className={`text-sm font-medium ${currentStep === 2 ? 'text-second-main' : ''}`}>Clarifications</p>
+              <p className={`text-sm font-medium ${currentStep === 2 ? 'text-[var(--text-second-main)]' : ''}`}>Clarifications</p>
             </div>
             <div className="text-center w-24 md:w-40">
-              <p className={`text-sm font-medium ${currentStep === 3 ? 'text-main' : ''}`}>Rapport</p>
+              <p className={`text-sm font-medium ${currentStep === 3 ? 'text-[var(--text-main)]' : ''}`}>Rapport</p>
             </div>
           </div>
         </div>
