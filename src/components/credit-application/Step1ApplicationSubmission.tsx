@@ -41,7 +41,7 @@ export function Step1ApplicationSubmission({ onComplete }: Step1Props) {
   };
 
   return (
-    <div className="max-w-3xl mx-auto bg-[var(--background)] rounded-xl shadow-md overflow-hidden">
+    <div className="max-w-3xl mx-auto bg-[var(--background)] border border-[var(--border-main)] rounded-xl shadow-md overflow-hidden">
       <div className="bg-main p-6">
         <h2 className="text-2xl font-bold text-[var(--text-main)]">Dépôt de la Demande de Crédit</h2>
         <p className="text-[var(--foreground)]/80 mt-1">

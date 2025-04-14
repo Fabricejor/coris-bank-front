@@ -6,18 +6,12 @@ export default function Home() {
       <header className="bg-[var(--bg-main)] text-[var(--foreground)] py-4">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold">CorisBank</h1>
-            <div className="hidden md:block">
-              <nav className="flex space-x-6">
-                <a href="#" className="hover:underline">Accueil</a>
-                <a href="#" className="hover:underline">Nos Services</a>
-                <a href="#" className="hover:underline">À Propos</a>
-                <a href="#" className="hover:underline">Contact</a>
-              </nav>
+            <div>
+              <img src="/images/LOGO_UJUZAI_fond_sombre.png" alt="logo" className="w-20 h-auto" />
             </div>
-            <button className="bg-[var(--background)] text-[var(--foreground)] px-4 py-2 rounded-md font-medium hover:bg-[var(--bg-gray)]">
-              Espace Client
-            </button>
+            <div className="bg-white">
+              <img src="/images/Coris-Bank.png" alt="logo" className="w-20 h-auto" />
+            </div>
           </div>
         </div>
       </header>
@@ -26,45 +20,18 @@ export default function Home() {
         <CreditApplicationFlow />
       </div>
       
-      <footer className="bg-gray-900 text-[var(--foreground)] py-10 mt-20">
+      <footer className="bg-[var(--main-color)] text-[var(--foreground)] py-10 mt-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="flex justify-between items-center w-full">
             <div>
-              <h3 className="text-xl font-bold mb-4">CorisBank</h3>
-              <p className="text-gray-400">
-                Votre partenaire financier de confiance pour tous vos projets.
-              </p>
+              <img src="/images/LOGO_UJUZAI_fond_sombre.png" alt="logo" className="w-40 h-auto" />
             </div>
-            <div>
-              <h4 className="font-medium mb-4">Liens Rapides</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Accueil</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Nos Services</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Demande de Crédit</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-medium mb-4">Services</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Crédit Personnel</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Crédit Immobilier</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Crédit Auto</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-[var(--foreground)]">Épargne</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-medium mb-4">Contact</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>123 Avenue Principale</li>
-                <li>Dakar, Sénégal</li>
-                <li>contact@corisbank.com</li>
-                <li>+221 33 123 4567</li>
-              </ul>
+            <div className="bg-white">
+              <img src="/images/Coris-Bank.png" alt="logo" className="w-40 h-auto" />
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} CorisBank. Tous droits réservés.</p>
+            <p>&copy; {new Date().getFullYear()} &copy; Gainde Talent Provider 2025. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
