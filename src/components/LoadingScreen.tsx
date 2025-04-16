@@ -53,11 +53,11 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
           />
         </div>
         
-        {/* Logo Coris Bank */}
+        {/* Logo AFA Bank */}
         <div className="w-48 h-auto">
           <Image
-            src="/images/Coris-Bank.png"
-            alt="Coris Bank Logo"
+            src="/images/AFA BANK.jpg"
+            alt="AFA Bank Logo"
             width={200}
             height={100}
             priority

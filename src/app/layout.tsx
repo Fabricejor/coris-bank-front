@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CorisBank - Demande de Crédit",
-  description: "Plateforme de demande de crédit assistée par IA",
+  title: "AFA Bank - Demande de Crédit",
+  description: "Plateforme de demande de crédit assistée par IA par UJUZAI",
 };
 
 export default function RootLayout({

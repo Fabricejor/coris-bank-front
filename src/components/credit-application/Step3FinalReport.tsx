@@ -20,7 +20,7 @@ interface Step3Props {
 export function Step3FinalReport({ onReset }: Step3Props) {
   // Static data for demo purposes
   const [status] = useState<CreditStatus>('approved');
-  const [totalScore] = useState(78);
+  const [totalScore] = useState(90);
   const [criteriaScores] = useState<CriteriaScore[]>([
     { 
       name: 'Capacité de remboursement', 
@@ -30,9 +30,9 @@ export function Step3FinalReport({ onReset }: Step3Props) {
     },
     { 
       name: 'Historique de crédit', 
-      score: 72, 
+      score: 90, 
       maxScore: 100,
-      comment: 'Bonne gestion des crédits précédents, quelques retards de paiement mineurs.' 
+      comment: 'Excellente gestion des crédits précédents, aucun retard de paiement.' 
     },
     { 
       name: 'Stabilité professionnelle', 
@@ -42,9 +42,9 @@ export function Step3FinalReport({ onReset }: Step3Props) {
     },
     { 
       name: 'Ratio d\'endettement', 
-      score: 65, 
+      score: 85, 
       maxScore: 100,
-      comment: 'Le niveau d\'endettement actuel est acceptable mais à surveiller.' 
+      comment: 'Le niveau d\'endettement actuel est bon mais à surveiller.' 
     },
   ]);
 
@@ -120,7 +120,7 @@ export function Step3FinalReport({ onReset }: Step3Props) {
                 cy="50"
                 r="45"
                 fill="none"
-                stroke={status === 'approved' ? '#164B35' : status === 'rejected' ? '#EF4444' : '#F59E0B'}
+                stroke={status === 'approved' ? '#1e3475' : status === 'rejected' ? '#EF4444' : '#F59E0B'}
                 strokeWidth="8"
                 strokeDasharray={`${totalScore * 2.83} 283`}
                 strokeDashoffset="0"
@@ -174,9 +174,12 @@ export function Step3FinalReport({ onReset }: Step3Props) {
         <div className="mt-10 bg-[var(--background)] p-6 rounded-lg border border-[var(--border-main)]">
           <h3 className="text-lg font-medium mb-2">Prochaines étapes</h3>
           {status === 'approved' ? (
-            <p className="text-[var(--foreground)]">
-              Un conseiller vous contactera sous 48h pour finaliser votre dossier de crédit et vous proposer les meilleures conditions.
-            </p>
+            <div className="flex flex-col gap-2">
+              <p className="text-[var(--foreground)]">
+                Veuillez vous présenter à la branche la plus proche pour finaliser votre dossier de crédit.	
+              </p>
+             <img src="/images/AFA map.png" alt="Map" className="w-full h-auto" />
+            </div>
           ) : status === 'rejected' ? (
             <p className="text-[var(--foreground)]">
               Nous vous invitons à consulter les raisons du refus dans l&apos;analyse détaillée ci-dessus. Vous pouvez soumettre une nouvelle demande après avoir amélioré ces points.

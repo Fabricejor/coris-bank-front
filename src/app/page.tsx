@@ -10,7 +10,7 @@ export default function Home() {
               <img src="/images/LOGO_UJUZAI_fond_sombre.png" alt="logo" className="w-20 h-auto" />
             </div>
             <div className="bg-white">
-              <img src="/images/Coris-Bank.png" alt="logo" className="w-20 h-auto" />
+              <img src="/images/AFA BANK.jpg" alt="logo" className="w-20 h-auto" />
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
               <img src="/images/LOGO_UJUZAI_fond_sombre.png" alt="logo" className="w-40 h-auto" />
             </div>
             <div className="bg-white">
-              <img src="/images/Coris-Bank.png" alt="logo" className="w-40 h-auto" />
+              <img src="/images/AFA BANK.jpg" alt="logo" className="w-40 h-auto" />
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
