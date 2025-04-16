@@ -39,7 +39,7 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[var(--main-color)]">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[var(--border-main)]">
       <div className="flex flex-col items-center space-y-8">
         {/* Logo UjuzAI */}
         <div className="w-48 h-auto">

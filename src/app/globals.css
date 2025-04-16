@@ -18,12 +18,12 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --main-color: #164B35;
+    --main-color: #055c77;
     --second-main-color: #164555;
-    --text-main: #216E4E;
+    --text-main: #055c77;
     --text-second-main: #42B2D7;
     --border-main:#164555;
-    --bg-main: #216E4E;
+    --bg-main: #055c77;
     --bg-second-main: #22A06B;
     --bg-gray: #38414A;
     --bg-container:#101214;
@@ -33,9 +33,9 @@
   :root {
     --background: #ffffff;
     --foreground: #171717;
-    --main-color: #164B35;
+    --main-color: #057ca0;
     --second-main-color: #164555;
-    --text-main: #22A06B;
+    --text-main: #057ca0;
     --text-second-main: #206A83;
     --bg-main: #22A06B;
     --border-main:#227D9B;
